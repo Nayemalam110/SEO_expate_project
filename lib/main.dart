@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:seo_expart/screens/login.dart';
 
 void main() {
@@ -10,11 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'SEO expart',
+    return GetMaterialApp(
+      title: 'SEO expate',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: AuthScreen(),
     );
   } //sadf

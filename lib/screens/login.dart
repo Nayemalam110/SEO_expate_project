@@ -1,7 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:seo_expart/model/http_exception.dart';
+import 'package:seo_expart/screens/product_screen.dart';
+import 'package:seo_expart/service/http_exception.dart';
+import 'package:get/get.dart';
 
 enum AuthMode { Signup, Login }
 
@@ -227,7 +229,9 @@ class _AuthCardState extends State<AuthCard> {
                   ElevatedButton(
                     child:
                         Text(_authMode == AuthMode.Login ? 'LOGIN' : 'SIGN UP'),
-                    onPressed: _submit,
+                    // onPressed: _submit,
+                    onPressed: () => Get.off(() => ProductScreen()),
+
                     style: ButtonStyle(),
                   ),
                 // TextButton(
