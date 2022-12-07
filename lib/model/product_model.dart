@@ -4,7 +4,7 @@
 
 import 'dart:convert';
 
-List<ProductModel> welcomeFromJson(String str) => List<ProductModel>.from(
+List<ProductModel> productModelFromJson(String str) => List<ProductModel>.from(
     json.decode(str).map((x) => ProductModel.fromJson(x)));
 
 String welcomeToJson(List<ProductModel> data) =>

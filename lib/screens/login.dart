@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:seo_expart/screens/product_screen.dart';
+import 'package:seo_expart/service/service_request.dart';
 import 'package:seo_expart/service/http_exception.dart';
 import 'package:get/get.dart';
 
@@ -230,7 +231,10 @@ class _AuthCardState extends State<AuthCard> {
                     child:
                         Text(_authMode == AuthMode.Login ? 'LOGIN' : 'SIGN UP'),
                     // onPressed: _submit,
-                    onPressed: () => Get.off(() => ProductScreen()),
+                    onPressed: () =>
+                        //ServiceRequest().featchPoducts()
+
+                        Get.off(() => ProductScreen()),
 
                     style: ButtonStyle(),
                   ),
